@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar Pedidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header class="encabezado">Munay</header>
+    <div class="container">
+        <h1>Cargar Pedido</h1>
+        <form id="pedidoForm">
+            <div class="form-group">
+                <label for="nombreCliente">Nombre del Cliente:</label>
+                <input type="text" id="nombreCliente" name="nombreCliente" required>
+            </div>
+            <div class="form-group">
+                <label for="direccionCliente">Dirección:</label>
+                <input type="text" id="direccionCliente" name="direccionCliente" required>
+            </div>
+            <div class="form-group">
+                <label for="horaEntrega">Hora de Entrega:</label>
+                <input type="time" id="horaEntrega" name="horaEntrega" required>
+            </div>
+            <div class="form-group">
+                <label for="producto">Producto:</label>
+                <select id="producto" name="producto" required>
+                    <option value="budin">Budín</option>
+                    <option value="frutosSecos1">Frutos Secos 1</option>
+                    <option value="frutosSecos2">Frutos Secos 2</option>
+                    <option value="frutosSecos3">Frutos Secos 3</option>
+                </select>
+            </div>
+            <button type="submit">Cargar Pedido</button>
+        </form>
+
+        <h2>Pedidos Recibidos</h2>
+        <ul id="listaPedidos"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
